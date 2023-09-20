@@ -9,3 +9,4 @@ The data is then processed into 20-day sequences. For example, a training exampl
 
 When training the model, it is possible to specify different prediction horizons by changing the horizon variable. In the notebook, the horizon variable is set to 0, which corresponds to a one day horizon. It can also be set to 6, 13, or 20, to train models for a one, two, or three week prediction horizon. 
 
+To train a new model, download the notebook and run it either in Colab or locally. As long as the frequency of data is daily and correct asset names are provided in the asset_names variable, preprocessing, training and validation should be done automatically by the notebook. The model will be saved with the .pt extension and can be loaded into a new notebook for later use using the toarch load_state_dict() mehtod.
